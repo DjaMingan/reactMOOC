@@ -5,7 +5,11 @@ class Menu extends Component {
 
   constructor(props) {
     super(props);
+    console.log('Menu Component constructor invoked');
+  }
 
+  ComponentDidMount () {
+    console.log('Menu Component ComponentDidMount invoked');
   }
 
   render() {
