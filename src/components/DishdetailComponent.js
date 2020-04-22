@@ -25,7 +25,7 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
                   return (
                       <li key={comment.id}>
                         <p>{comment.comment}</p>
-                        <p>-- {comment.author} , {comment.date}</p>
+                        <p>-- {comment.author} , {new Intl.DateTimeFormat('en-GB', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</p>
                       </li>
                     );
                 })}
